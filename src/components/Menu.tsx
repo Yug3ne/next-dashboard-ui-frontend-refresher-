@@ -118,9 +118,9 @@ const menuItems = [
 
 const Menu = () => {
   return (
-    <div>
+    <div className="overflow-hidden overflow-y-scroll h-screen scrollnone">
       {menuItems.map((menus) => (
-        <div className="flex flex-col gap-2" key={menus.title}>
+        <div className="flex flex-col gap-2 " key={menus.title} >
           <span className="hidden lg:block text-gray-400 my-4">{menus.title}</span>
           {menus.items.map((item) => (
             <Link key={item.label} href={item.href} className="flex items-center justify-center lg:justify-start gap-4 py-2">
